@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Thiemoko Traoré\\Fullstack\\Asp.net\\UserPostApi\\UserPostApi.csproj": {}
+    "C:\\Users\\thiem\\Fullstack\\Asp.net\\UserPostApi\\UserPostApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Thiemoko Traoré\\Fullstack\\Asp.net\\UserPostApi\\UserPostApi.csproj": {
+    "C:\\Users\\thiem\\Fullstack\\Asp.net\\UserPostApi\\UserPostApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Thiemoko Traoré\\Fullstack\\Asp.net\\UserPostApi\\UserPostApi.csproj",
+        "projectUniqueName": "C:\\Users\\thiem\\Fullstack\\Asp.net\\UserPostApi\\UserPostApi.csproj",
         "projectName": "UserPostApi",
-        "projectPath": "C:\\Users\\Thiemoko Traoré\\Fullstack\\Asp.net\\UserPostApi\\UserPostApi.csproj",
-        "packagesPath": "C:\\Users\\Thiemoko Traoré\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Thiemoko Traoré\\Fullstack\\Asp.net\\UserPostApi\\obj\\",
+        "projectPath": "C:\\Users\\thiem\\Fullstack\\Asp.net\\UserPostApi\\UserPostApi.csproj",
+        "packagesPath": "C:\\Users\\thiem\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thiem\\Fullstack\\Asp.net\\UserPostApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Thiemoko Traoré\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\thiem\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -51,15 +49,17 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[8.0.6, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[8.0.6, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[8.0.6, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -85,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

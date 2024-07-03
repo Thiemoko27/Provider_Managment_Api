@@ -1,9 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using UserPostApi.Services;
 using UserPostApi.Models;
-using Microsoft.Extensions.Logging;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace UserPostApi.Controllers;
 
@@ -59,12 +56,23 @@ public class ProviderController : ControllerBase
 
     [HttpPut("{id}")]
 
-    public IActionResult PutUser(int id, Provider provider) {
-        if(id != provider.Id)
-            return BadRequest();
+    public IActionResult PutUser(int id, [FromBody] Provider provider) {
+        if(id != provider.Id) {
+            Console.WriteLine("fdjbfdun");
+            return BadRequest("L'id ne correspond pas");
+        }
 
-        _providerService.UpdateProvider(provider);
-        return NoContent();
+        if(!ModelState.IsValid) {
+            Console.WriteLine("ssssbfdun");
+            return BadRequest(ModelState);
+        }
+            
+        try {
+            _providerService.UpdateProvider(provider);
+            return NoContent();
+        } catch(Exception) {
+            return StatusCode(500, "Internal error");
+        }
     }
 
     [HttpDelete("{id}")]
