@@ -1,8 +1,9 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.EntityFrameworkCore;
+using System.Text;
 using UserPostApi.Data;
 using UserPostApi.Services;
-using Microsoft.EntityFrameworkCore;
 
 
 namespace UserPostApi;

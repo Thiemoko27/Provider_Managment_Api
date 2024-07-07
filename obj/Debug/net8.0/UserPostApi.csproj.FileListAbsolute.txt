@@ -203,3 +203,4 @@ C:\Users\thiem\fullstack\asp.net\userpostapi\obj\Debug\net8.0\refint\UserPostApi
 C:\Users\thiem\fullstack\asp.net\userpostapi\obj\Debug\net8.0\UserPostApi.pdb
 C:\Users\thiem\fullstack\asp.net\userpostapi\obj\Debug\net8.0\UserPostApi.genruntimeconfig.cache
 C:\Users\thiem\fullstack\asp.net\userpostapi\obj\Debug\net8.0\ref\UserPostApi.dll
+C:\Users\thiem\Fullstack\Asp.net\UserPostApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

@@ -11,7 +11,7 @@ using UserPostApi.Data;
 namespace UserPostApi.Migrations
 {
     [DbContext(typeof(DataBaseContext))]
-    [Migration("20240702135851_InitialCreate")]
+    [Migration("20240705184511_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -33,6 +33,10 @@ namespace UserPostApi.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Location")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

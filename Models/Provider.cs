@@ -14,4 +14,7 @@ public class Provider
 
     [Required(ErrorMessage = "Store location required")]
     public string? Location { get; set; }
+
+    [Required(ErrorMessage = "Password Required")]
+    public string? Password { get; set; }
 }
