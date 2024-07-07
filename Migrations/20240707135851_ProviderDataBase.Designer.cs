@@ -11,8 +11,8 @@ using UserPostApi.Data;
 namespace UserPostApi.Migrations
 {
     [DbContext(typeof(DataBaseContext))]
-    [Migration("20240705184511_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20240707135851_ProviderDataBase")]
+    partial class ProviderDataBase
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

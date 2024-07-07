@@ -5,13 +5,13 @@
 namespace UserPostApi.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class ProviderDataBase : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Provider",
+                name: "Providers",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -23,7 +23,7 @@ namespace UserPostApi.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Provider", x => x.Id);
+                    table.PrimaryKey("PK_Providers", x => x.Id);
                 });
         }
 
